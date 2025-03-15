@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donation App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Blood Donation App</h1>
+
+    <!-- Donor Registration Form -->
+    <div class="form-container">
+      <h2>Register as a Donor</h2>
+      <form id="donorForm">
+        <input type="text" id="donorName" placeholder="Your Name" required>
+        <input type="text" id="donorBloodGroup" placeholder="Blood Group" required>
+        <input type="text" id="donorLocation" placeholder="Location" required>
+        <input type="text" id="donorContact" placeholder="Contact Info" required>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <!-- Blood Request Form -->
+    <div class="form-container">
+      <h2>Request Blood</h2>
+      <form id="requestForm">
+        <input type="text" id="requestName" placeholder="Your Name" required>
+        <input type="text" id="requestBloodGroup" placeholder="Blood Group" required>
+        <input type="text" id="requestLocation" placeholder="Location" required>
+        <input type="text" id="requestContact" placeholder="Contact Info" required>
+        <input type="text" id="requestUrgency" placeholder="Urgency" required>
+        <button type="submit">Submit Request</button>
+      </form>
+    </div>
+  </div>
+  <div class="form-container">
+    <h2>Notifications</h2>
+    <div id="notifications"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
